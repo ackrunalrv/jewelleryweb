@@ -1,911 +1,115 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>
-    Shree Mahalaxmi jewellers
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Roboto&amp;display=swap"
-    rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="img/mjlogo.jpg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="shop">Shop</a></li>
+                <li><a href="#" data-page="about">About</a></li>
+                <li><a href="#" data-page="blog">Blog</a></li>
+                <li><a href="#" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
 
-<body class="text-gray-800">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16 items-center">
-        <a class="flex items-center space-x-3 text-pink-600 font-bold" href="index.html" id="nav-home-link">
-          <img alt="Elegant Jewellary logo featuring a stylized pink diamond icon" class="w-10 h-10 object-contain"
-            height="40" src="img/mjlogo.jpg"
-            width="40"
-            style="border-radius: 50%;" />
-          <span class="text-3xl font-playfair">
-            Shree Mahalaxmi Jewellars
-          </span>
-        </a>
-        <div class="hidden md:flex space-x-8 text-gray-700 font-semibold">
-          <a class="hover:text-pink-600 transition" href="index.html" id="nav-home">
-            Home
-          </a>
-          <a class="hover:text-pink-600 transition" href="shop.html" id="nav-shop">
-            Shop
-          </a>
-          <a class="hover:text-pink-600 transition" href="about.html" id="nav-about">
-            About Us
-          </a>
-          <a class="hover:text-pink-600 transition" href="blog.html" id="nav-blog">
-            Blog
-          </a>
-          <a class="hover:text-pink-600 transition" href="contact.html" id="nav-contact">
-            Contact
-          </a>
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <h1>Welcome to MyWebsite</h1>
+            <p>This is the home page. Explore our products, blog, and more!</p>
+        </section>
+
+        <!-- Shop Page -->
+        <!-- Shop Page -->
+<section id="shop" class="page">
+    <h1>Our Shop</h1>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 1">
+            <h3>Product 1</h3>
+            <p class="price">$19.99</p>
+            <button>Add to Cart</button>
         </div>
-        <div class="md:hidden">
-          <button aria-label="Toggle menu" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-600"
-            id="mobile-menu-button">
-            <i class="fas fa-bars fa-lg">
-            </i>
-          </button>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 2">
+            <h3>Product 2</h3>
+            <p class="price">$29.99</p>
+            <button>Add to Cart</button>
         </div>
-      </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 3">
+            <h3>Product 3</h3>
+            <p class="price">$39.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 4">
+            <h3>Product 4</h3>
+            <p class="price">$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 5">
+            <h3>Product 5</h3>
+            <p class="price">$59.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 6">
+            <h3>Product 6</h3>
+            <p class="price">$69.99</p>
+            <button>Add to Cart</button>
+        </div>
     </div>
-    <div class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
-      <a class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 font-semibold" href="index.html"
-        id="mobile-nav-home">
-        Home
-      </a>
-      <a class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 font-semibold" href="shop.html"
-        id="mobile-nav-shop">
-        Shop
-      </a>
-      <a class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 font-semibold" href="about.html"
-        id="mobile-nav-about">
-        About Us
-      </a>
-      <a class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 font-semibold" href="blog.html"
-        id="mobile-nav-blog">
-        Blog
-      </a>
-      <a class="block px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 font-semibold" href="contact.html"
-        id="mobile-nav-contact">
-        Contact
-      </a>
-    </div>
-  </nav>
-  <script>
-    const btn = document.getElementById('mobile-menu-button');
-    const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
-  <!-- Home Page -->
-  <main class="pt-20" id="home">
-    <section class="relative bg-pink-50">
-      <img alt="Elegant gold necklace with diamonds on a soft pink background" class="w-full object-cover h-60 sm:h-96"
-        height="600" src="https://storage.googleapis.com/a1aa/image/24c4e855-cb53-4f61-75ed-8342e3524f2c.jpg"
-        width="1920" />
-      <div
-        class="absolute inset-0 bg-pink-900 bg-opacity-40 flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-white text-4xl sm:text-6xl font-playfair font-bold mb-4 drop-shadow-lg">
-          Discover Timeless Elegance
-        </h1>
-        <p class="text-pink-200 max-w-xl text-lg sm:text-xl mb-6 drop-shadow-md">
-          Handcrafted jewelry to celebrate your unique style and moments.
-        </p>
-        <a class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded shadow-lg transition"
-          href="shop.html">
-          Shop Now
-        </a>
-      </div>
-    </section>
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h2 class="text-3xl font-playfair font-bold text-center mb-10 text-pink-700">
-        Featured Collections
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <a class="group block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition" href="shop.html#rings">
-          <img alt="Close-up of an elegant diamond ring on black velvet background"
-            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="400"
-            src="https://storage.googleapis.com/a1aa/image/3cb5f9fc-dd6b-4e7e-6a15-c7a27ca2cb72.jpg" width="600" />
-          <div class="p-4 bg-white">
-            <h3 class="text-xl font-semibold text-pink-700 group-hover:text-pink-900 transition">
-              Diamond Rings
-            </h3>
-            <p class="text-gray-600 mt-2">
-              Sparkle with our exclusive diamond ring collection.
-            </p>
-          </div>
-        </a>
-        <a class="group block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
-          href="shop.html#necklaces">
-          <img alt="Gold necklace with pearls displayed on a clean white background"
-            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="400"
-            src="https://storage.googleapis.com/a1aa/image/84f110ac-52b6-4f9b-458c-427fbbf8a940.jpg" width="600" />
-          <div class="p-4 bg-white">
-            <h3 class="text-xl font-semibold text-pink-700 group-hover:text-pink-900 transition">
-              Necklaces
-            </h3>
-            <p class="text-gray-600 mt-2">
-              Elegant necklaces to complement every outfit.
-            </p>
-          </div>
-        </a>
-        <a class="group block rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition"
-          href="shop.html#earrings">
-          <img alt="Rose gold earrings with colorful gemstones placed on white marble surface"
-            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="400"
-            src="https://storage.googleapis.com/a1aa/image/34a75238-6d5a-4f2d-4705-9e6084743e08.jpg" width="600" />
-          <div class="p-4 bg-white">
-            <h3 class="text-xl font-semibold text-pink-700 group-hover:text-pink-900 transition">
-              Earrings
-            </h3>
-            <p class="text-gray-600 mt-2">
-              Stylish earrings for every occasion.
-            </p>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="bg-pink-100 py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-playfair font-bold text-pink-700 mb-6">
-          Why Choose Elegant Jewellary?
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-          <div class="flex flex-col items-center px-4">
-            <i class="fas fa-gem text-pink-600 text-5xl mb-4">
-            </i>
-            <h3 class="text-xl font-semibold mb-2">
-              Premium Quality
-            </h3>
-            <p class="text-gray-700">
-              Only the finest materials and craftsmanship go into our pieces.
-            </p>
-          </div>
-          <div class="flex flex-col items-center px-4">
-            <i class="fas fa-hand-holding-heart text-pink-600 text-5xl mb-4">
-            </i>
-            <h3 class="text-xl font-semibold mb-2">
-              Handcrafted with Love
-            </h3>
-            <p class="text-gray-700">
-              Each piece is carefully designed and made by skilled artisans.
-            </p>
-          </div>
-          <div class="flex flex-col items-center px-4">
-            <i class="fas fa-shipping-fast text-pink-600 text-5xl mb-4">
-            </i>
-            <h3 class="text-xl font-semibold mb-2">
-              Fast &amp; Secure Shipping
-            </h3>
-            <p class="text-gray-700">
-              Reliable delivery to your doorstep with secure packaging.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h2 class="text-3xl font-playfair font-bold text-center mb-10 text-pink-700">
-        Latest Blog Posts
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-          <img alt="Jewelry care tips with brushes and cleaning cloth on a wooden table"
-            class="w-full h-48 object-cover" height="400"
-            src="https://storage.googleapis.com/a1aa/image/2d2b1042-17d7-4d05-ed97-498aec5576ca.jpg" width="600" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-pink-700 mb-2">
-              How to Care for Your Jewelry
-            </h3>
-            <p class="text-gray-700 mb-4">
-              Keep your precious pieces shining with these simple care tips.
-            </p>
-            <a class="text-pink-600 font-semibold hover:underline" href="blog.html#care-tips">
-              Read More →
-            </a>
-          </div>
-        </article>
-        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-          <img alt="Wedding rings on a velvet box surrounded by soft pink flowers" class="w-full h-48 object-cover"
-            height="400" src="https://storage.googleapis.com/a1aa/image/9d8c7897-deff-4d40-0b96-82a9a394c5cb.jpg"
-            width="600" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-pink-700 mb-2">
-              Choosing the Perfect Wedding Ring
-            </h3>
-            <p class="text-gray-700 mb-4">
-              Tips to find the ring that symbolizes your eternal love.
-            </p>
-            <a class="text-pink-600 font-semibold hover:underline" href="blog.html#wedding-rings">
-              Read More →
-            </a>
-          </div>
-        </article>
-        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-          <img alt="Stacked bracelets on a hand with sunlight shining through" class="w-full h-48 object-cover"
-            height="400" src="https://storage.googleapis.com/a1aa/image/590a89c9-dc52-4a0b-5ab3-bcb34ec92af8.jpg"
-            width="600" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-pink-700 mb-2">
-              Trending Jewelry Styles 2024
-            </h3>
-            <p class="text-gray-700 mb-4">
-              Discover the hottest jewelry trends to elevate your look.
-            </p>
-            <a class="text-pink-600 font-semibold hover:underline" href="blog.html#trends-2024">
-              Read More →
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="bg-pink-600 text-white py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-playfair font-bold mb-4">
-          Subscribe to Our Newsletter
-        </h2>
-        <p class="mb-6 max-w-xl mx-auto">
-          Get exclusive offers, new arrivals, and jewelry tips delivered to your inbox.
-        </p>
-        <form class="flex flex-col sm:flex-row justify-center max-w-md mx-auto gap-4">
-          <input class="rounded px-4 py-3 text-gray-800 flex-grow focus:outline-none" placeholder="Enter your email"
-            required="" type="email" />
-          <button class="bg-pink-800 hover:bg-pink-900 rounded px-6 py-3 font-semibold transition" type="submit">
-            Subscribe
-          </button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <!-- Shop Page -->
-  <main class="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="shop">
-    <h1 class="text-4xl font-playfair font-bold text-pink-700 text-center my-12">
-      Shop Our Collections
-    </h1>
+</section>
 
-    <!-- Filters and Sorting -->
-    <section class="mb-12 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <div class="flex flex-wrap gap-3">
-        <button data-filter="all"
-          class="filter-btn bg-pink-600 text-white px-4 py-2 rounded font-semibold hover:bg-pink-700 transition">
-          All
-        </button>
-        <button data-filter="rings"
-          class="filter-btn bg-pink-100 text-pink-700 px-4 py-2 rounded font-semibold hover:bg-pink-200 transition">
-          Rings
-        </button>
-        <button data-filter="necklaces"
-          class="filter-btn bg-pink-100 text-pink-700 px-4 py-2 rounded font-semibold hover:bg-pink-200 transition">
-          Necklaces
-        </button>
-        <button data-filter="earrings"
-          class="filter-btn bg-pink-100 text-pink-700 px-4 py-2 rounded font-semibold hover:bg-pink-200 transition">
-          Earrings
-        </button>
-      </div>
-      <div>
-        <label for="sort" class="mr-2 font-semibold text-gray-700">Sort by:</label>
-        <select id="sort"
-          class="border border-pink-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-600">
-          <option value="default">Default</option>
-          <option value="price-asc">Price: Low to High</option>
-          <option value="price-desc">Price: High to Low</option>
-          <option value="name-asc">Name: A to Z</option>
-          <option value="name-desc">Name: Z to A</option>
-        </select>
-      </div>
-    </section>
 
-    <!-- Products Grid -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="products-grid">
-      <!-- Product Item Template -->
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden ring"
-        data-category="rings" data-name="Classic Solitaire" data-price="1200">
-        <img alt="Classic solitaire diamond ring on black velvet background" class="w-full h-72 object-cover"
-          height="600" src="https://storage.googleapis.com/a1aa/image/fbffde31-31a6-4b78-ba0e-f5dfa809b493.jpg"
-          width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">
-            Classic Solitaire
-          </h3>
-          <p class="text-gray-700 mb-2">
-            A timeless diamond ring with a single sparkling stone.
-          </p>
-          <p class="font-bold text-pink-600">$1,200</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
+        <!-- About Page -->
+        <section id="about" class="page">
+            <h1>About Us</h1>
+            <p>We are passionate about providing quality products and sharing valuable knowledge through our blog.</p>
+        </section>
 
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-        data-category="rings" data-name="Halo Sparkle" data-price="1800">
-        <img alt="Halo diamond ring with white gold band on white background" class="w-full h-72 object-cover"
-          height="600" src="https://storage.googleapis.com/a1aa/image/e5ef347a-df97-492d-9835-a02c9dd0658e.jpg"
-          width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">Halo Sparkle</h3>
-          <p class="text-gray-700 mb-2">
-            Diamond ring with a halo of smaller stones for extra brilliance.
-          </p>
-          <p class="font-bold text-pink-600">$1,800</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
+        <!-- Blog Page -->
+        <section id="blog" class="page">
+            <h1>Our Blog</h1>
+            <div class="blog-posts">
+                <div class="post">
+                    <h3>Blog Post 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="post">
+                    <h3>Blog Post 2</h3>
+                    <p>Curabitur malesuada turpis nec ligula fermentum, eget commodo justo suscipit.</p>
+                </div>
+                <div class="post">
+                    <h3>Blog Post 3</h3>
+                    <p>Proin sed ligula vitae nulla vehicula consectetur.</p>
+                </div>
+            </div>
+        </section>
 
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-        data-category="rings" data-name="Vintage Elegance" data-price="2100">
-        <img alt="Vintage diamond ring with intricate design and milgrain details" class="w-full h-72 object-cover"
-          height="600" src="https://storage.googleapis.com/a1aa/image/c589f7bc-e464-49b9-562d-6c0966cba37f.jpg"
-          width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">
-            Vintage Elegance
-          </h3>
-          <p class="text-gray-700 mb-2">
-            Intricately designed diamond ring with a vintage flair.
-          </p>
-          <p class="font-bold text-pink-600">$2,100</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <h1>Contact Us</h1>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-        data-category="necklaces" data-name="Gold Pendant" data-price="950">
-        <img alt="Gold pendant necklace with a sparkling diamond on a white background" class="w-full h-72 object-cover"
-          height="600" src="https://storage.googleapis.com/a1aa/image/3f6e2c7a-e9e4-41fa-4832-21470a92ddac.jpg"
-          width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">Gold Pendant</h3>
-          <p class="text-gray-700 mb-2">
-            Elegant gold necklace with a sparkling diamond pendant.
-          </p>
-          <p class="font-bold text-pink-600">$950</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-        data-category="necklaces" data-name="Pearl Classic" data-price="1300">
-        <img alt="Classic pearl necklace with a gold clasp on a soft beige background" class="w-full h-72 object-cover"
-          height="600" src="https://storage.googleapis.com/a1aa/image/3f6407ee-34f4-4c2d-5d8e-293be2156b75.jpg"
-          width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">Pearl Classic</h3>
-          <p class="text-gray-700 mb-2">
-            Timeless pearl necklace with a secure gold clasp.
-          </p>
-          <p class="font-bold text-pink-600">$1,300</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-        data-category="necklaces" data-name="Layered Gold" data-price="1100">
-        <img alt="Set of layered necklaces with delicate gold chains on a white background"
-          class="w-full h-72 object-cover" height="600"
-          src="https://storage.googleapis.com/a1aa/image/e0df9dfd-94da-4898-1f2b-13cedb89f333.jpg" width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">Layered Gold</h3>
-          <p class="text-gray-700 mb-2">
-            Trendy layered gold necklaces for a modern look.
-          </p>
-          <p class="font-bold text-pink-600">$1,100</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-        data-category="earrings" data-name="Rose Gold Studs" data-price="650">
-        <img alt="Rose gold stud earrings with sparkling diamonds on a white background"
-          class="w-full h-72 object-cover" height="600"
-          src="https://storage.googleapis.com/a1aa/image/630ca1ad-fbf4-4fea-73fd-201258f1de29.jpg" width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">Rose Gold Studs</h3>
-          <p class="text-gray-700 mb-2">
-            Delicate rose gold earrings with diamond accents.
-          </p>
-          <p class="font-bold text-pink-600">$650</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-        data-category="earrings" data-name="Gemstone Drops" data-price="850">
-        <img alt="Dangling earrings with colorful gemstones on a black velvet background"
-          class="w-full h-72 object-cover" height="600"
-          src="https://storage.googleapis.com/a1aa/image/19130c0e-8030-4552-259f-abd20b6bf292.jpg" width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">Gemstone Drops</h3>
-          <p class="text-gray-700 mb-2">
-            Vibrant dangling earrings with multi-colored gemstones.
-          </p>
-          <p class="font-bold text-pink-600">$850</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
-
-      <div class="product-item border rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-        data-category="earrings" data-name="Diamond Hoops" data-price="900">
-        <img alt="Classic hoop earrings with diamond accents on a white background" class="w-full h-72 object-cover"
-          height="600" src="https://storage.googleapis.com/a1aa/image/4b1fee65-9e0c-46a5-6394-f99bc8f052cd.jpg"
-          width="600" />
-        <div class="p-4">
-          <h3 class="text-xl font-semibold text-pink-700 mb-1">Diamond Hoops</h3>
-          <p class="text-gray-700 mb-2">
-            Classic hoop earrings enhanced with diamond accents.
-          </p>
-          <p class="font-bold text-pink-600">$900</p>
-          <button class="mt-3 w-full bg-pink-600 hover:bg-pink-700 text-white py-2 rounded font-semibold transition"
-            type="button">
-            Add to Cart
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pagination -->
-    <section class="flex justify-center mt-12 space-x-3" aria-label="Pagination" id="pagination">
-      <button class="page-btn bg-pink-100 text-pink-700 px-4 py-2 rounded font-semibold hover:bg-pink-200 transition"
-        data-page="1">
-        1
-      </button>
-      <button class="page-btn bg-pink-100 text-pink-700 px-4 py-2 rounded font-semibold hover:bg-pink-200 transition"
-        data-page="2">
-        2
-      </button>
-      <button class="page-btn bg-pink-100 text-pink-700 px-4 py-2 rounded font-semibold hover:bg-pink-200 transition"
-        data-page="3">
-        3
-      </button>
-    </section>
-  </main>
-
-  <script>
-    (() => {
-      const productsGrid = document.getElementById("products-grid");
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const sortSelect = document.getElementById("sort");
-      const pagination = document.getElementById("pagination");
-      const pageButtons = pagination.querySelectorAll(".page-btn");
-
-      // For demo, assume 9 products per page
-      const PRODUCTS_PER_PAGE = 6;
-
-      // Collect all product items
-      const allProducts = Array.from(productsGrid.children);
-
-      // State
-      let currentFilter = "all";
-      let currentSort = "default";
-      let currentPage = 1;
-
-      // Filter products by category
-      function filterProducts() {
-        let filtered =
-          currentFilter === "all"
-            ? allProducts
-            : allProducts.filter(
-              (p) => p.dataset.category === currentFilter.toLowerCase()
-            );
-        return filtered;
-      }
-
-      // Sort products by currentSort
-      function sortProducts(products) {
-        let sorted = [...products];
-        switch (currentSort) {
-          case "price-asc":
-            sorted.sort(
-              (a, b) => Number(a.dataset.price) - Number(b.dataset.price)
-            );
-            break;
-          case "price-desc":
-            sorted.sort(
-              (a, b) => Number(b.dataset.price) - Number(a.dataset.price)
-            );
-            break;
-          case "name-asc":
-            sorted.sort((a, b) =>
-              a.dataset.name.localeCompare(b.dataset.name, undefined, {
-                sensitivity: "base",
-              })
-            );
-            break;
-          case "name-desc":
-            sorted.sort((a, b) =>
-              b.dataset.name.localeCompare(a.dataset.name, undefined, {
-                sensitivity: "base",
-              })
-            );
-            break;
-          default:
-            // default order as in DOM
-            sorted = [...products];
-        }
-        return sorted;
-      }
-
-      // Render products for current page
-      function renderProducts(products) {
-        productsGrid.innerHTML = "";
-        const start = (currentPage - 1) * PRODUCTS_PER_PAGE;
-        const end = start + PRODUCTS_PER_PAGE;
-        const pageProducts = products.slice(start, end);
-        pageProducts.forEach((product) => {
-          productsGrid.appendChild(product);
-        });
-      }
-
-      // Update pagination buttons active state and visibility
-      function updatePagination(totalProducts) {
-        const totalPages = Math.ceil(totalProducts / PRODUCTS_PER_PAGE);
-        pageButtons.forEach((btn) => {
-          const page = Number(btn.dataset.page);
-          btn.style.display = page <= totalPages ? "inline-block" : "none";
-          btn.classList.toggle(
-            "bg-pink-600 text-white",
-            page === currentPage
-          );
-          btn.classList.toggle(
-            "bg-pink-100 text-pink-700",
-            page !== currentPage
-          );
-        });
-      }
-
-      // Main update function
-      function updateShop() {
-        let filtered = filterProducts();
-        let sorted = sortProducts(filtered);
-        if (currentPage > Math.ceil(sorted.length / PRODUCTS_PER_PAGE)) {
-          currentPage = 1; // reset page if out of range
-        }
-        renderProducts(sorted);
-        updatePagination(sorted.length);
-      }
-
-      // Event listeners for filter buttons
-      filterButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          currentFilter = btn.dataset.filter;
-          currentPage = 1;
-          filterButtons.forEach((b) => {
-            b.classList.remove("bg-pink-600", "text-white");
-            b.classList.add("bg-pink-100", "text-pink-700");
-          });
-          btn.classList.add("bg-pink-600", "text-white");
-          btn.classList.remove("bg-pink-100", "text-pink-700");
-          updateShop();
-        });
-      });
-
-      // Event listener for sort select
-      sortSelect.addEventListener("change", () => {
-        currentSort = sortSelect.value;
-        currentPage = 1;
-        updateShop();
-      });
-
-      // Event listeners for pagination buttons
-      pageButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const page = Number(btn.dataset.page);
-          if (page !== currentPage) {
-            currentPage = page;
-            updateShop();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }
-        });
-      });
-
-      // Initialize default filter button style
-      filterButtons.forEach((btn) => {
-        if (btn.dataset.filter === "all") {
-          btn.classList.add("bg-pink-600", "text-white");
-          btn.classList.remove("bg-pink-100", "text-pink-700");
-        }
-      });
-
-      // Initial render
-      updateShop();
-    })();
-  </script>
-  <!-- About Page -->
-  <main class="pt-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 hidden" id="about">
-    <h1 class="text-4xl font-playfair font-bold text-pink-700 text-center my-12">
-      About Elegant Jewellary
-    </h1>
-    <section class="flex flex-col md:flex-row items-center gap-10 mb-16">
-      <img alt="Jewelry artisan crafting a gold necklace in a bright workshop with tools"
-        class="w-full md:w-1/2 rounded-lg shadow-lg object-cover" height="400"
-        src="https://storage.googleapis.com/a1aa/image/b07ae539-545d-4b0a-e326-248788a13664.jpg" width="600" />
-      <div class="md:w-1/2">
-        <h2 class="text-3xl font-playfair font-bold text-pink-700 mb-4">
-          Our Story
-        </h2>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          Elegant Jewellary was founded with a passion for creating timeless pieces that celebrate beauty and
-          craftsmanship. Our artisans combine traditional techniques with modern designs to bring you jewelry that tells
-          a story.
-        </p>
-        <p class="text-gray-700 leading-relaxed">
-          We believe that jewelry is more than just an accessory — it’s a reflection of your personality and a keepsake
-          for your most cherished moments.
-        </p>
-      </div>
-    </section>
-    <section class="mb-16">
-      <h2 class="text-3xl font-playfair font-bold text-pink-700 mb-6 text-center">
-        Meet Our Artisans
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-        <div class="text-center">
-          <img alt="Portrait of female jewelry artisan smiling in workshop wearing apron and glasses"
-            class="mx-auto rounded-full w-40 h-40 object-cover shadow-lg" height="300"
-            src="https://storage.googleapis.com/a1aa/image/4e6b5901-eedc-48c9-bf28-c83f9e047d6b.jpg" width="300" />
-          <h3 class="mt-4 text-xl font-semibold text-pink-700">
-            Sophia Lee
-          </h3>
-          <p class="text-gray-600">
-            Master Goldsmith
-          </p>
-        </div>
-        <div class="text-center">
-          <img alt="Portrait of male artisan working on diamond ring with magnifying glass in workshop"
-            class="mx-auto rounded-full w-40 h-40 object-cover shadow-lg" height="300"
-            src="https://storage.googleapis.com/a1aa/image/e50a6c6e-11c1-4d66-aed4-01820750327c.jpg" width="300" />
-          <h3 class="mt-4 text-xl font-semibold text-pink-700">
-            Liam Johnson
-          </h3>
-          <p class="text-gray-600">
-            Diamond Specialist
-          </p>
-        </div>
-        <div class="text-center">
-          <img alt="Portrait of female artisan designing jewelry sketches with pencil and paper"
-            class="mx-auto rounded-full w-40 h-40 object-cover shadow-lg" height="300"
-            src="https://storage.googleapis.com/a1aa/image/bdb8b467-ae92-40b1-4e3e-94b330fe5b94.jpg" width="300" />
-          <h3 class="mt-4 text-xl font-semibold text-pink-700">
-            Emma Davis
-          </h3>
-          <p class="text-gray-600">
-            Jewelry Designer
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="bg-pink-100 rounded-lg p-8 text-center">
-      <h2 class="text-3xl font-playfair font-bold text-pink-700 mb-4">
-        Our Commitment to Sustainability
-      </h2>
-      <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
-        We are dedicated to sourcing ethically and minimizing our environmental impact. Our materials are responsibly
-        mined, and we continuously seek ways to reduce waste and support fair labor practices.
-      </p>
-    </section>
-  </main>
-  <!-- Blog Page -->
-  <main class="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 hidden" id="blog">
-    <h1 class="text-4xl font-playfair font-bold text-pink-700 text-center my-12">
-      Jewelry Blog
-    </h1>
-    <article class="mb-16 max-w-4xl mx-auto" id="care-tips">
-      <img alt="Jewelry cleaning tools and tips on a wooden table with soft natural light"
-        class="w-full rounded-lg shadow-lg mb-6 object-cover" height="400"
-        src="https://storage.googleapis.com/a1aa/image/dd145cf0-f7de-45fa-f08e-6bc7478b6596.jpg" width="900" />
-      <h2 class="text-3xl font-playfair font-bold text-pink-700 mb-4">
-        How to Care for Your Jewelry
-      </h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        Proper care is essential to keep your jewelry looking its best. Clean your pieces regularly with gentle
-        solutions, avoid exposure to harsh chemicals, and store them separately to prevent scratches.
-      </p>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        For delicate stones and vintage pieces, professional cleaning is recommended to maintain their brilliance and
-        integrity.
-      </p>
-    </article>
-    <article class="mb-16 max-w-4xl mx-auto" id="wedding-rings">
-      <img alt="Wedding rings on a velvet box surrounded by soft pink roses and petals"
-        class="w-full rounded-lg shadow-lg mb-6 object-cover" height="400"
-        src="https://storage.googleapis.com/a1aa/image/4c38c6d0-eaa5-45ba-9550-248868c4ca6d.jpg" width="900" />
-      <h2 class="text-3xl font-playfair font-bold text-pink-700 mb-4">
-        Choosing the Perfect Wedding Ring
-      </h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        Selecting a wedding ring is a deeply personal choice. Consider your lifestyle, metal preferences, and design
-        styles. Whether you prefer classic bands or intricate designs, your ring should symbolize your unique love
-        story.
-      </p>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        Our experts are here to guide you through the selection process to find the perfect match.
-      </p>
-    </article>
-    <article class="mb-16 max-w-4xl mx-auto" id="trends-2024">
-      <img alt="Stacked bracelets and rings on a hand with sunlight shining through, showcasing trendy jewelry"
-        class="w-full rounded-lg shadow-lg mb-6 object-cover" height="400"
-        src="https://storage.googleapis.com/a1aa/image/9e7fa344-9910-4588-c7e9-1e851d027e36.jpg" width="900" />
-      <h2 class="text-3xl font-playfair font-bold text-pink-700 mb-4">
-        Trending Jewelry Styles 2024
-      </h2>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        This year, layering and mixed metals are in vogue. Bold statement pieces and minimalist designs both have their
-        place. Explore how to combine styles to create your own signature look.
-      </p>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        Stay ahead of the trends with our curated collections and styling tips.
-      </p>
-    </article>
-  </main>
-  <!-- Contact Page -->
-  <main class="pt-20 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 hidden" id="contact">
-    <h1 class="text-4xl font-playfair font-bold text-pink-700 text-center my-12">
-      Contact Us
-    </h1>
-    <section class="bg-pink-50 rounded-lg shadow-lg p-8">
-      <form action="#" class="space-y-6" method="POST">
-        <div>
-          <label class="block text-pink-700 font-semibold mb-2" for="name">
-            Name
-          </label>
-          <input
-            class="w-full border border-pink-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
-            id="name" name="name" placeholder="Your full name" required="" type="text" />
-        </div>
-        <div>
-          <label class="block text-pink-700 font-semibold mb-2" for="email">
-            Email
-          </label>
-          <input
-            class="w-full border border-pink-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
-            id="email" name="email" placeholder="you@example.com" required="" type="email" />
-        </div>
-        <div>
-          <label class="block text-pink-700 font-semibold mb-2" for="subject">
-            Subject
-          </label>
-          <input
-            class="w-full border border-pink-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
-            id="subject" name="subject" placeholder="Subject of your message" required="" type="text" />
-        </div>
-        <div>
-          <label class="block text-pink-700 font-semibold mb-2" for="message">
-            Message
-          </label>
-          <textarea
-            class="w-full border border-pink-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-pink-600"
-            id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
-        </div>
-        <button class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded w-full transition"
-          type="submit">
-          Send Message
-        </button>
-      </form>
-    </section>
-    <section class="mt-12 text-center text-gray-700">
-      <h2 class="text-2xl font-playfair font-bold text-pink-700 mb-4">
-        Our Location
-      </h2>
-      <p>
-        123 Jewelry Lane, Gem City, CA 90210
-      </p>
-      <p class="mt-2">
-        Phone: (123) 456-7890
-      </p>
-      <p class="mt-2">
-        Email: support@elegantjewellary.com
-      </p>
-      <div class="mt-6 flex justify-center space-x-6 text-pink-600 text-2xl">
-        <a aria-label="Facebook" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
-          <i class="fab fa-facebook-square">
-          </i>
-        </a>
-        <a aria-label="Instagram" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
-          <i class="fab fa-instagram">
-          </i>
-        </a>
-        <a aria-label="Twitter" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
-          <i class="fab fa-twitter-square">
-          </i>
-        </a>
-        <a aria-label="Pinterest" href="https://pinterest.com" rel="noopener noreferrer" target="_blank">
-          <i class="fab fa-pinterest-square">
-          </i>
-        </a>
-      </div>
-    </section>
-  </main>
-  <script>
-    // Simple page navigation script
-    const pages = ['home', 'shop', 'about', 'blog', 'contact'];
-    const navLinks = document.querySelectorAll('nav a');
-    const mainSections = pages.map(id => document.getElementById(id));
-
-    function showPage(pageId) {
-      mainSections.forEach(section => {
-        if (section.id === pageId) {
-          section.classList.remove('hidden');
-        } else {
-          section.classList.add('hidden');
-        }
-      });
-      navLinks.forEach(link => {
-        if (link.getAttribute('href') === pageId + '.html' || link.getAttribute('href') === '#' + pageId) {
-          link.classList.add('text-pink-600', 'font-bold');
-        } else {
-          link.classList.remove('text-pink-600', 'font-bold');
-        }
-      });
-      // Close mobile menu on navigation
-      document.getElementById('mobile-menu').classList.add('hidden');
-    }
-
-    // Override default link behavior for demo single page navigation
-    navLinks.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const href = link.getAttribute('href');
-        if (href.endsWith('.html')) {
-          const pageId = href.replace('.html', '');
-          if (pages.includes(pageId)) {
-            showPage(pageId);
-            window.scrollTo(0, 0);
-          }
-        }
-      });
-    });
-
-    // Show home page by default
-    showPage('home');
-
-    // Specifically handle the "Home" link click to reopen home page
-    const homeLink = document.getElementById('nav-home');
-    if (homeLink) {
-      homeLink.addEventListener('click', e => {
-        e.preventDefault();
-        showPage('home');
-        window.scrollTo(0, 0);
-      });
-    }
-    const mobileHomeLink = document.getElementById('mobile-nav-home');
-    if (mobileHomeLink) {
-      mobileHomeLink.addEventListener('click', e => {
-        e.preventDefault();
-        showPage('home');
-        window.scrollTo(0, 0);
-      });
-    }
-  </script>
+    <script src="script.js"></script>
 </body>
-
 </html>

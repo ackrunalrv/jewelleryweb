@@ -1,0 +1,206 @@
+/* 🎨 COLOR VARIABLES */
+:root {
+    --primary-color: #00c3ff;       /* Buttons, links, highlights */
+    --primary-hover: #0095c0;       /* Button hover */
+    --secondary-color: #fff;        /* Navbar text / body text default */
+    --background-color: #f5f5f5;    /* Page background */
+    --card-background: #fff;         /* Product / page cards */
+    --blog-background: #f0f0f0;     /* Blog post background */
+    --heading-color: #333;           /* Headings default */
+    --navbar-background: #00c3ff;    /* Navbar background */
+    --footer-background: #222;       /* Footer background */
+    --border-color: #ccc;            /* Input borders */
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--heading-color);
+    background-color: var(--background-color);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navbar-background);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Pages */
+.page {
+    display: none;
+    padding: 50px 20px;
+    min-height: 80vh;
+    background: var(--card-background);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Products */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+
+.product-card .price {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 8px 15px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product-card button:hover {
+    background: var(--primary-hover);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Blog */
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post {
+    background: var(--blog-background);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.contact-form button {
+    padding: 10px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: var(--primary-hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--navbar-background);
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 10px;
+        border-radius: 0 0 0 10px;
+    }
+
+    .navbar .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
